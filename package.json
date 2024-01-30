@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "shell": "cd app && yarn start",
+    "header": "cd header && yarn start",
+    "footer": "cd footer && npm start",
+    "left-sidebar": "cd left-sidebar && npm start",
+    "right-sidebar": "cd right-sidebar && npm start",
+    "start-all": "concurrently \"npm:shell\" \"npm:header\" \"npm:footer\" \"npm:left-sidebar\" \"npm:right-sidebar\"",
+    "install-all": "concurrently \"npm install\" \"cd header && npm install\" \"cd footer && npm install\" \"cd left-sidebar && npm install\" \"cd right-sidebar && npm install\""
+  }
+}
