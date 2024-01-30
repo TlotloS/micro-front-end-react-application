@@ -6,6 +6,9 @@
     "left-sidebar": "cd left-sidebar && npm start",
     "right-sidebar": "cd right-sidebar && npm start",
     "start-all": "concurrently \"npm:shell\" \"npm:header\" \"npm:footer\" \"npm:left-sidebar\" \"npm:right-sidebar\"",
-    "install-all": "concurrently \"npm install\" \"cd header && npm install\" \"cd footer && npm install\" \"cd left-sidebar && npm install\" \"cd right-sidebar && npm install\""
+    "install-all": "concurrently \"npm install\" \"cd app && yarn install\" \"cd header && yarn install\" \"cd footer && npm install\" \"cd left-sidebar && npm install\" \"cd right-sidebar && npm install\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
   }
 }
